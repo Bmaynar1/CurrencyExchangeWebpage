@@ -9,7 +9,7 @@ namespace CurrencyExchageWebpage
 {
     public class ExchangeRateProcessor
     {
-        public async Task<ExchangeRateModel> LoadSource(string source = "")
+        public static async Task<ExchangeRateModel> LoadSource()
         {
             string url = "http://www.apilayer.net/api/live?access_key=244c0ecd519fa825e38dcafb80059220&format=1";
 
@@ -17,9 +17,9 @@ namespace CurrencyExchageWebpage
             {
                 if (response.IsSuccessStatusCode)
                 {
-                    ExchangeRateModel sourcex = await response.Content.ReadAsAsync<ExchangeRateModel>();
+                    ExchangeRateModel source = await response.Content.ReadAsAsync<ExchangeRateModel>();
 
-                    return sourcex;
+                    return source;
                 }
                 else
                 {

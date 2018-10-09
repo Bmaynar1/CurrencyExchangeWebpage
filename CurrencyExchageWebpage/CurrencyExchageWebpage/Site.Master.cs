@@ -9,9 +9,10 @@ namespace CurrencyExchageWebpage
 {
     public partial class SiteMaster : MasterPage
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected  System.Threading.Tasks.Task Page_Load(object sender, EventArgs e)
         {
 
+            
         }
     }
 }

@@ -5,9 +5,9 @@
     
 
    Test
-   <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"  ></asp:TextBox>
-    
+   <asp:Label ID="Label1" runat="server" Text="nope"></asp:Label>
 
+    <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
 
 
 </asp:Content>
