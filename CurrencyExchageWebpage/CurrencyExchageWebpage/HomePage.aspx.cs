@@ -10,13 +10,14 @@ namespace CurrencyExchageWebpage
 {
     public partial class HomePage : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected async void Page_Load(object sender, EventArgs e)
         {
             ApiHelper.InitializeClient();
-             
+            await LoadSource();
         }
 
-        private async Task Loadsource()
+
+        private async Task LoadSource()
         {
             var currncytype = await ExchangeRateProcessor.LoadSource();
 

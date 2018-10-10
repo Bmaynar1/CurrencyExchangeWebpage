@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="CurrencyExchageWebpage.HomePage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="CurrencyExchageWebpage.HomePage" Async="true" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolderBody"> 
 
